@@ -11,8 +11,7 @@
         <p class="myname">my name is</p><br>
     </header>
     <main>
-       
-        <p class="conni"><span id='display'></span></p>
+        <p class="conni"><span id='display_message'></span></p>
     </main>
     <footer>
 
@@ -24,13 +23,14 @@
                 <strong>Let's Make A Name Tag!</strong></button>
           </div>
           <div class="login-popup">
-            <div class="form-popup" id="popupForm" style="display: block;">;
-                <form class="form-container">
-                    <h2>"What's your FIRST NAME?</h2>
-                    <input type="text" placeholder="Name" name="message" id="user_input">
-                    <button type="submit" class="btn"  onclick="showInput();">Voila!</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            <div class="form-popup" id="popupForm">
+                <form action+"/action_page.php" class="form-container">
+                    <h2>What's your FIRST NAME?</h2>
+                    <input type="text" placeholder="Name" id="message">
+                    <button type="button" class="btn"  onclick="showMessage()">Voila!</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
                 </form>
             </div>
+          </div>
     </body>
   </html>
